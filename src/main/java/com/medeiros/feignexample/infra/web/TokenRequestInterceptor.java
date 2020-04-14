@@ -10,10 +10,8 @@ public class TokenRequestInterceptor implements RequestInterceptor {
 
 	@Override
 	public void apply(RequestTemplate template) {
-		if (!template.url().contains("/posts")) {
-			System.out.println("Apply token");
-			template.header("TOKEN", "ADHSDFHUIFSD");
-		}
+		System.out.println("Apply token");
+		template.header("TOKEN", "ADHSDFHUIFSD");
 	}
 
 }
