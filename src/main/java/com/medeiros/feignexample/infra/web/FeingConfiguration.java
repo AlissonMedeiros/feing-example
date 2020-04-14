@@ -1,15 +1,14 @@
 package com.medeiros.feignexample.infra.web;
 
+import feign.Contract;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class ClientsConfig {
+public class FeingConfiguration {
 
 	@Bean
-	public CepClient cepClient() {
-		return ClientBuilder.of()
-			.target(CepClient.class, "https://viacep.com.br/ws/");
+	public Contract contract(){
+		return new Contract.Default();
 	}
-
 }

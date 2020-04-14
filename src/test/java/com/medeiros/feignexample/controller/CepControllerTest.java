@@ -8,6 +8,6 @@ public class CepControllerTest {
 
 	@Test
 	public void a() {
-		
+
 	}
 }

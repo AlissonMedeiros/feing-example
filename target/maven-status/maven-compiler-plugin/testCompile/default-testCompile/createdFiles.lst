@@ -1,0 +1,4 @@
+com/medeiros/feignexample/infra/web/CepClientTest.class
+com/medeiros/feignexample/infra/web/ClientBuilder.class
+com/medeiros/feignexample/infra/web/CepConsumerImplTest.class
+com/medeiros/feignexample/controller/CepControllerTest.class

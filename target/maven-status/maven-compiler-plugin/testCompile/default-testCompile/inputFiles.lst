@@ -1,0 +1,4 @@
+/home/alisson/Code/feing-example/src/test/java/com/medeiros/feignexample/infra/web/CepConsumerImplTest.java
+/home/alisson/Code/feing-example/src/test/java/com/medeiros/feignexample/controller/CepControllerTest.java
+/home/alisson/Code/feing-example/src/test/java/com/medeiros/feignexample/infra/web/CepClientTest.java
+/home/alisson/Code/feing-example/src/test/java/com/medeiros/feignexample/infra/web/ClientBuilder.java

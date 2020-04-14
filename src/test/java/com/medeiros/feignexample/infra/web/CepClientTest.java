@@ -1,11 +1,13 @@
 package com.medeiros.feignexample.infra.web;
 
 import com.medeiros.feignexample.domain.AddressDto;
+import feign.Contract;
 import feign.mock.HttpMethod;
 import feign.mock.MockClient;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.cloud.openfeign.support.SpringMvcContract;
 
 public class CepClientTest {
 
@@ -26,7 +28,9 @@ public class CepClientTest {
 				"  \"ibge\": \"3550308\",\n" +
 				"  \"gia\": \"1004\"\n" +
 				"}");
-		cepClient = ClientBuilder.of(mockClient)
+		cepClient = ClientBuilder.of()
+			.client(mockClient)
+			.contract(new Contract.Default())
 			.target(CepClient.class, "https://viacep.com.br/ws/");
 	}
 
